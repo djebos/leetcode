@@ -71,9 +71,9 @@ public class TwoSum {
 
         Map<Integer, Integer> store = new HashMap<>();
         for (int i = 0; i < arr.length; i++) {
-            Integer currentFound = store.get(arr[i]);
-            if (currentFound != null) { // pair found because previously some digit added its target
-                return new int[] { i, currentFound };
+            Integer currentFoundIdx = store.get(arr[i]);
+            if (currentFoundIdx != null) { // pair found because previously some digit added its target
+                return new int[] { i, currentFoundIdx };
             }
             // None expects pair with current digit: calculate its own target and store
             int currentTarget = targetSum - arr[i];
