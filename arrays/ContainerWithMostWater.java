@@ -3,6 +3,7 @@ package arrays;
 import java.util.Arrays;
 
 /**
+ * Easy
  * https://leetcode.com/problems/container-with-most-water/description/
  */
 public class ContainerWithMostWater {
