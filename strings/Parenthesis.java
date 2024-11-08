@@ -10,7 +10,9 @@ public class Parenthesis {
         boolean valid2 = isValid("{}[](]");
         System.out.println("{}[](] ->" + valid2);
     }
-
+    // 
+    // t: O(n)
+    // s: O(n)
     public static boolean isValid(String s) {
         if (s == null) {
             return false;
