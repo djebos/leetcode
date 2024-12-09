@@ -9,7 +9,7 @@ public class Insertion {
         System.out.println(Arrays.toString(arr));
     }
 
-    // t: O(n^2), but if the array almost sorted - O(n)
+    // t: O(n^2) in case array is reversed, but if the array almost sorted - O(n)
     // s: O(1)
     public void sort(int[] arr) {
         for (int i = 1; i < arr.length; i++) {
