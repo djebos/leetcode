@@ -60,7 +60,7 @@ public class MergeArrays {
         int i = m -1; // left current element
         int j = n -1; // right current element
         int k = m + n -1; // result array current element
-        while (k > 0 && i >= 0 || j >= 0) {
+        while (k >= 0 && (i >= 0 || j >= 0)) {
            if (i >= 0 && j >= 0) {
             if (nums1[i] > nums2[j]) {
                 nums1[k] = nums1[i];
